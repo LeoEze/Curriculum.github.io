@@ -1,0 +1,111 @@
+:root {
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+}
+
+/*----- GENERAL STYLE -----*/
+a{
+  color: inherit;
+}
+.container > row {
+  margin-bottom: 3rem;
+}
+
+section{
+  margin-bottom: 3rem;
+}
+
+/*----- SECTIONS -----*/
+/*-----> Nav */
+.navbar-brand > img {
+  width: 55px
+}
+.navbar-main .active{
+  text-decoration: underline wavy var(--color-purple);
+  text-underline-offset: 9px;
+}
+
+/*-----> header */
+.icon-social-networks > a {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5 filter;
+  text-decoration: none;
+  color: var(--color-gray-medium);
+}
+.icon-social-networks > a:hover{
+  filter: opacity(0.5);
+}
+.sec-clients > a:hover{
+  filter: opacity(0.5);
+}
+.sec-clients > a {
+  transition: filter 0.4s;
+}
+
+
+.bg-facebook{
+  background-color: #023693;
+}
+.bg-twitch{
+  background-color: #6441a5;
+}
+.bg-linkedin{
+  background-color: #0077b5;
+}
+
+
+.header-main{
+  min-height: 100vh;
+}
+
+/* servicio */
+.icon-service{
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+.portfolio-item > img {
+  transition: 0.4s transform;
+}
+.portfolio-item:hover > img {
+  transform: scale(0.96);
+}
+
+#btn-arriba {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: var(--color-purple);
+  color: var(--color-gray-medium);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+@media screen and (max-width: 376px) {
+  body{
+    margin-top: 4rem;
+  }
+  .header-main{
+    height: initial;
+  }
+  .photo-frame{
+    font-size: 11px;
+  }
+}
